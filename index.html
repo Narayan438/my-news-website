@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="nnews — विश्वसनीय समाचार, निष्पक्ष विचार र ताजा अपडेट।">
+  <title>nnews | सत्य, तथ्य र ताजा समाचार</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <p id="currentDate">मिति लोड हुँदैछ...</p>
+        <div class="top-links">
+          <a href="#">हाम्रोबारे</a>
+          <a href="#">सम्पर्क</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="brandbar">
+      <div class="container brandbar-inner">
+        <a class="brand" href="index.html" aria-label="nnews गृहपृष्ठ">
+          <span class="brand-n">n</span><span>news</span>
+        </a>
+        <p class="tagline">सत्य, तथ्य र ताजा समाचार</p>
+      </div>
+    </div>
+
+    <nav class="navbar" aria-label="मुख्य नेभिगेसन">
+      <div class="container nav-inner">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainMenu">
+          <span></span><span></span><span></span>
+          <span class="sr-only">मेनु खोल्नुहोस्</span>
+        </button>
+        <ul id="mainMenu" class="nav-menu">
+          <li><a class="active" href="index.html">गृहपृष्ठ</a></li>
+          <li><a href="#">राष्ट्रिय</a></li>
+          <li><a href="#">राजनीति</a></li>
+          <li><a href="#">शिक्षा</a></li>
+          <li><a href="#">अर्थ</a></li>
+          <li><a href="#">खेलकुद</a></li>
+          <li><a href="#">प्रविधि</a></li>
+          <li><a href="#">मनोरञ्जन</a></li>
+          <li><a href="#">विचार</a></li>
+        </ul>
+        <button class="search-button" type="button" aria-label="समाचार खोज्नुहोस्">⌕</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="breaking" aria-label="ब्रेकिङ समाचार">
+      <div class="container breaking-inner">
+        <strong>ब्रेकिङ</strong>
+        <p>nnews को नमुना समाचार पोर्टल निर्माण सुरु भएको छ।</p>
+      </div>
+    </section>
+
+    <section class="hero-news container">
+      <article class="lead-story story-card">
+        <div class="image-placeholder" role="img" aria-label="मुख्य समाचारको तस्बिर">
+          <span>मुख्य समाचारको तस्बिर</span>
+        </div>
+        <div class="story-content">
+          <span class="category">मुख्य समाचार</span>
+          <h1>यहाँ आजको सबैभन्दा महत्त्वपूर्ण समाचारको शीर्षक राखिनेछ</h1>
+          <p>समाचारको छोटो परिचय वा मुख्य सारांश यहाँ देखिनेछ। Admin प्रणाली बनेपछि यो सामग्री सजिलै परिवर्तन गर्न सकिनेछ।</p>
+          <time datetime="2026-08-15">साउन ३०, २०८३</time>
+        </div>
+      </article>
+
+      <div class="side-stories">
+        <article class="story-card compact">
+          <div class="small-placeholder">तस्बिर</div>
+          <div>
+            <span class="category">शिक्षा</span>
+            <h2>शिक्षासम्बन्धी प्रमुख समाचार यहाँ देखिनेछ</h2>
+          </div>
+        </article>
+        <article class="story-card compact">
+          <div class="small-placeholder">तस्बिर</div>
+          <div>
+            <span class="category">प्रविधि</span>
+            <h2>प्रविधि जगतको पछिल्लो अपडेट यहाँ देखिनेछ</h2>
+          </div>
+        </article>
+        <article class="story-card compact">
+          <div class="small-placeholder">तस्बिर</div>
+          <div>
+            <span class="category">खेलकुद</span>
+            <h2>खेलकुदको ताजा समाचार यहाँ देखिनेछ</h2>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <strong>nnews</strong>
+      <p>© <span id="currentYear"></span> nnews. सर्वाधिकार सुरक्षित।</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
