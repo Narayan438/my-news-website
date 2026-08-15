@@ -35,3 +35,36 @@ if (currentYear) {
     useGrouping: false
   }).format(today.getFullYear());
 }
+
+
+const sidebarTabs = document.querySelectorAll(".sidebar-tab");
+const tabPanels = document.querySelectorAll(".tab-panel");
+
+sidebarTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const targetId = tab.dataset.tab;
+
+    sidebarTabs.forEach((item) => {
+      const isActive = item === tab;
+      item.classList.toggle("active", isActive);
+      item.setAttribute("aria-selected", String(isActive));
+    });
+
+    tabPanels.forEach((panel) => {
+      const isActive = panel.id === targetId;
+      panel.classList.toggle("active", isActive);
+      panel.hidden = !isActive;
+    });
+  });
+});
+
+const newsletterForm = document.querySelector(".newsletter form");
+
+if (newsletterForm) {
+  newsletterForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const button = newsletterForm.querySelector("button");
+    button.textContent = "धन्यवाद!";
+    button.disabled = true;
+  });
+}
